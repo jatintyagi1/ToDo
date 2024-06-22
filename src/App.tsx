@@ -1,24 +1,39 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import { TaskList } from './Components/TaskList';
+import { AddTaskForm } from './Components/AddTaskForm';
+import { Task, TaskCategory, TaskPriority } from './types';
+import { TaskFilters } from './Components/TaskFilter';
 
-function App() {
+const App: React.FC = () => {
+  const [tasks, setTasks] = useState<Task[]>([]);
+  const [filters, setFilters] = useState<{ category: TaskCategory | null; priority: TaskPriority | null }>({ category: null, priority: null });
+
+  const addTask = (task: Task) => {
+    setTasks([...tasks, task]);
+  };
+
+  const toggleTaskCompletion = (taskId: number) => {
+    setTasks(tasks.map(task =>
+      task.id === taskId ? { ...task, completed: !task.completed } : task
+    ));
+  };
+
+  const deleteTask = (taskId: number) => {
+    setTasks(tasks.filter(task => task.id !== taskId));
+  };
+
+  const filteredTasks = tasks.filter(task => {
+    return (!filters.category || task.category === filters.category) &&
+           (!filters.priority || task.priority === filters.priority);
+  });
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <h1>To-Do Task Manager</h1>
+      <AddTaskForm addTask={addTask} />
+      <TaskFilters filters={filters} setFilters={setFilters} />
+      <TaskList tasks={filteredTasks} toggleTaskCompletion={toggleTaskCompletion} deleteTask={deleteTask} />
     </div>
   );
 }

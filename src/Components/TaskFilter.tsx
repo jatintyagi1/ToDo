@@ -18,7 +18,7 @@ export const TaskFilters: React.FC<TaskFiltersProps> = ({ filters, setFilters })
           <option key={cat} value={cat}>{cat}</option>
         ))}
       </select>
-      <select 
+      <select
         value={filters.priority || ''} 
         onChange={(e) => setFilters({ ...filters, priority: e.target.value as TaskPriority })}
       >

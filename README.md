@@ -26,4 +26,4 @@ To run this project locally, follow these steps:
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/yourusername/advanced-todo-task-manager.git
+   git clone https://github.com/jatintyagi1/ToDo.git

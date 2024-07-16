@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/jatintyagi1/ToDo/static/css/main.e07ffbec.css",
+    "main.js": "/jatintyagi1/ToDo/static/js/main.90132c7e.js",
+    "static/js/453.37753ddd.chunk.js": "/jatintyagi1/ToDo/static/js/453.37753ddd.chunk.js",
+    "index.html": "/jatintyagi1/ToDo/index.html",
+    "main.e07ffbec.css.map": "/jatintyagi1/ToDo/static/css/main.e07ffbec.css.map",
+    "main.90132c7e.js.map": "/jatintyagi1/ToDo/static/js/main.90132c7e.js.map",
+    "453.37753ddd.chunk.js.map": "/jatintyagi1/ToDo/static/js/453.37753ddd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e07ffbec.css",
+    "static/js/main.90132c7e.js"
+  ]
+}

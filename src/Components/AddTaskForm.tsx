@@ -1,6 +1,8 @@
 import React, { useState, FormEvent } from 'react';
 import { Task, TaskCategory, TaskPriority } from '../types';
 
+import '../styles/addTaskForm.css'
+
 interface AddTaskFormProps {
   addTask: (task: Task) => void;
 }

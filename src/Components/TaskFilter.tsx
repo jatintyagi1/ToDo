@@ -1,6 +1,8 @@
 import React from 'react';
 import { TaskCategory, TaskPriority } from '../types';
 
+import '../styles/taskFilter.css'
+
 interface TaskFiltersProps {
   filters: { category: TaskCategory | null; priority: TaskPriority | null };
   setFilters: (filters: { category: TaskCategory | null; priority: TaskPriority | null }) => void;

@@ -1,0 +1,31 @@
+
+
+.add-task-form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.add-task-form input[type="text"],
+.add-task-form select,
+.add-task-form input[type="date"] {
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  width: 18%;
+  margin-right: 10px;
+}
+
+.add-task-form button {
+    padding: 10px 15px;
+    background: #28a745;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    background: transition 0.3s;
+  }
+  
+  .add-task-form button:hover {
+    background: #218838;
+  } 

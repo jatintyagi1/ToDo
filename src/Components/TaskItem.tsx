@@ -1,6 +1,8 @@
 import React from 'react';
 import { Task } from '../types';
 
+import '../styles/taskItem.css'
+
 interface TaskItemProps {
   task: Task;
   toggleTaskCompletion: (taskId: number) => void;

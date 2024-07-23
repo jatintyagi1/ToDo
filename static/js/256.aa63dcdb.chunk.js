@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunktodo=self.webpackChunktodo||[]).push([[256],{256:(e,s,d)=>{d.r(s),d.d(s,{default:()=>l});var n=d(245),a=d(579);const c=()=>(0,a.jsx)("div",{className:"landing-page",children:(0,a.jsxs)("div",{className:"landing-page-content",children:[(0,a.jsx)("h1",{children:"Welcome to To-Do-Task-App"}),(0,a.jsx)(n.N_,{to:"app",children:(0,a.jsx)("h4",{children:"Get IN"})})]})}),l=()=>(0,a.jsx)("div",{children:(0,a.jsx)(c,{})})}}]);
+//# sourceMappingURL=256.aa63dcdb.chunk.js.map

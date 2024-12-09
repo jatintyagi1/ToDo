@@ -3,7 +3,7 @@ import {
     createHashRouter,
 } from "react-router-dom";
 
-const LandingPage = lazy(() => import('../pages/demo'));
+const LandingPage = lazy(() => import('../pages/LandingPage'));
 const Main = lazy(() => import('../pages/main'))
 
 

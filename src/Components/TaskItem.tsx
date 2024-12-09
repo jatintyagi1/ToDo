@@ -1,5 +1,5 @@
 import React from 'react';
-import { Task } from '../types';
+import { Task } from '../utils/types';
 
 import '../styles/taskItem.css'
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { TaskCategory, TaskPriority } from '../types';
+import { TaskCategory, TaskPriority } from '../utils/types';
 
 import '../styles/taskFilter.css'
 

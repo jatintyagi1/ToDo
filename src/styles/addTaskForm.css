@@ -1,9 +1,7 @@
-
-
 .add-task-form {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .add-task-form input[type="text"],
@@ -17,15 +15,33 @@
 }
 
 .add-task-form button {
-    padding: 10px 15px;
-    background: #28a745;
-    border: none;
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
-    background: transition 0.3s;
+  padding: 10px 15px;
+  background: #28a745;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  background: transition 0.3s;
+}
+
+.add-task-form button:hover {
+  background: #218838;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .add-task-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-  
-  .add-task-form button:hover {
-    background: #218838;
-  } 
+
+  .add-task-form input[type="text"],
+  .add-task-form select,
+  .add-task-form input[type="date"] {
+    width: 80%;
+    margin-bottom: 10px;
+  }
+}

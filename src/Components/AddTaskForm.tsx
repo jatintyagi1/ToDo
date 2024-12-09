@@ -1,5 +1,5 @@
 import React, { useState, FormEvent } from 'react';
-import { Task, TaskCategory, TaskPriority } from '../types';
+import { Task, TaskCategory, TaskPriority } from '../utils/types';
 
 import '../styles/addTaskForm.css'
 
@@ -33,26 +33,26 @@ export const AddTaskForm: React.FC<AddTaskFormProps> = ({ addTask }) => {
 
   return (
     <form className="add-task-form" onSubmit={handleSubmit}>
-      <input 
-        type="text" 
-        placeholder="Add a new task..." 
-        value={title} 
-        onChange={(e) => setTitle(e.target.value)} 
+      <input
+        type="text"
+        placeholder="Add a new task..."
+        value={title}
+        onChange={(e) => setTitle(e.target.value)}
       />
       <select value={category} onChange={(e) => setCategory(e.target.value as TaskCategory)}>
-        {Object.values(TaskCategory).map(cat => (
-          <option key={cat} value={cat}>{cat}</option>
+        {Object.values(TaskCategory).map(category => (
+          <option key={category} value={category}>{category}</option>
         ))}
       </select>
       <select value={priority} onChange={(e) => setPriority(e.target.value as TaskPriority)}>
-        {Object.values(TaskPriority).map(pri => (
-          <option key={pri} value={pri}>{pri}</option>
+        {Object.values(TaskPriority).map(priority => (
+          <option key={priority} value={priority}>{priority}</option>
         ))}
       </select>
-      <input 
-        type="date" 
-        value={deadline} 
-        onChange={(e) => setDeadline(e.target.value)} 
+      <input
+        type="date"
+        value={deadline}
+        onChange={(e) => setDeadline(e.target.value)}
       />
       <button type="submit">Add Task</button>
     </form>
